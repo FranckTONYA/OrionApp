@@ -4,6 +4,9 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.junit.jupiter.api.Test;
 import entity.User;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 class HibernateH2ConfigurationTest {
 
     private Logger logger = LoggerFactory.getLogger(HibernateH2ConfigurationTest.class);
