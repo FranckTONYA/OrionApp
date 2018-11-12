@@ -21,6 +21,7 @@ public class HibernateMySqlConfiguration {
     public void buildSessionFactory(){
         sessionFactory = configuration.buildSessionFactory();
     }
+
     public SessionFactory sessionFactory() {
         return sessionFactory;
     }

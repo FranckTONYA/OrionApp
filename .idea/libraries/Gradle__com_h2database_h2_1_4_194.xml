@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Gradle: com.h2database:h2:1.4.194">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/Could not resolve com.h2database:h2:1.4.194." />
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.h2database/h2/1.4.194/a180e95af52ad8116d52beb5f1d28596dcafa9d8/h2-1.4.194.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

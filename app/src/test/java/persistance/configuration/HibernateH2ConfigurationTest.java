@@ -1,14 +1,17 @@
 package persistance.configuration;
 
-        import org.hibernate.Session;
-        import org.hibernate.SessionFactory;
-        import org.junit.jupiter.api.Test;
-        import entity.User;
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.junit.jupiter.api.Test;
+import entity.User;
+class HibernateH2ConfigurationTest {
 
-class HibernateMySqlConfigurationTest {
+    private Logger logger = LoggerFactory.getLogger(HibernateH2ConfigurationTest.class);
+
     @Test
     void Save() {
-        HibernateMySqlConfiguration configuration = new HibernateMySqlConfiguration();
+
+        HibernateH2Configuration configuration = new HibernateH2Configuration();
         configuration.configure();
         configuration.addClass(User.class);
         configuration.buildSessionFactory();
@@ -21,8 +24,6 @@ class HibernateMySqlConfigurationTest {
         session.save(user);
         session.getTransaction().commit();
         session.close();
-        System.out.println("New user id: " + user.getId());
-
-
+        logger.info("New user id: " + user.getId());
     }
 }
